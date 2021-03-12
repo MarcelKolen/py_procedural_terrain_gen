@@ -40,7 +40,7 @@ The parameters for plot_map are:
 - houses
 - roads
 - plot_name
-- 
+
 generate_noise_map returns a noise map.
 
 amplify_terrain takes a noise map and returns an amplified noise map.
