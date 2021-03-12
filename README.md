@@ -19,7 +19,7 @@ An example would be
 
 	python terrain_generator.py width=300 height=150 houses=10 max_road_dist=75
 	
-This creates a map of 300 by 150, populates it with 10 houses and houses that are no more than 75 apart get a road between them (provided the algorithm doesn’t run out of its budget).
+This creates a map of ```300``` by ```150```, populates it with ```10``` houses and houses that are no more than ```75``` apart get a road between them (provided the algorithm doesn’t run out of its budget).
 
 ## As a collection of separate terrain generator components
 Each component can be used separately. To use the components, import as follows:
@@ -41,15 +41,15 @@ The parameters for plot_map are:
 - roads
 - plot_name
 
-generate_noise_map returns a noise map.
+```generate_noise_map``` returns a noise map.
 
-amplify_terrain takes a noise map and returns an amplified noise map.
+```amplify_terrain``` takes a noise map and returns an amplified noise map.
 
-smooth_terrain takes a noise map and returns an smoothed noise map.
+```smooth_terrain``` takes a noise map and returns an smoothed noise map.
 
-add_houses takes a noise map and returns list of house coordinates as tuples.
+```add_houses takes``` a noise map and returns list of house coordinates as tuples.
 
-build_roads takes a noise map and a list of houses and returns lists of road point coordinates as tuples.
+```build_roads takes``` a noise map and a list of houses and returns lists of road point coordinates as tuples.
 
 ## As an algorithm family producing three different noise maps, a house location map and a road map
 This essentially does the same as simply running the script as a python program, however, the result is not five plots, but rather it returns:
